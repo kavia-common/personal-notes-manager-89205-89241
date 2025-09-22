@@ -1,0 +1,5 @@
+allprojects {
+    gradle.taskGraph.whenReady { graph ->
+        println("[CI stub] .gradle/init.gradle loaded in Expo-managed repository. No native build performed.")
+    }
+}

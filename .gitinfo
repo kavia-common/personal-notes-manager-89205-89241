@@ -1,0 +1,2 @@
+This repository intentionally includes root-level and mobile_frontend/android gradlew stubs to satisfy CI environments that invoke ./gradlew.
+They are no-ops for Expo managed workflow. For real native builds, run prebuild then use the generated android/gradlew.

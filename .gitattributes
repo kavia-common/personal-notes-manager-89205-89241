@@ -1,0 +1,10 @@
+# Ensure shell scripts use LF and preserve executable bit across platforms
+*.sh text eol=lf
+gradlew text eol=lf
+gradlew.sh text eol=lf
+gradlew.shim text eol=lf
+gradle.sh text eol=lf
+gradle-ci.sh text eol=lf
+.ci/* text eol=lf
+mobile_frontend/android/gradlew text eol=lf
+gradle/wrapper/gradle-wrapper.properties text eol=lf

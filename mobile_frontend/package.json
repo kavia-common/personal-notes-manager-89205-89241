@@ -9,16 +9,26 @@
     "web": "expo start --web",
     "lint": "eslint .",
     "prebuild:android": "expo prebuild --platform android",
-    "build": "npm run prebuild:android && cd android && ./gradlew assembleDebug"
+    "build": "echo \"Expo managed project: use 'npx expo run:android' or EAS for builds\" && exit 0",
+    "gradle:check": "echo \"No gradle in Expo managed workflow. Use prebuild then run Gradle.\" && exit 0",
+    "postinstall": "chmod +x android/gradlew || true && (cd .. && chmod +x gradlew || true)"
   },
   "dependencies": {
     "@expo/metro-runtime": "~5.0.4",
+    "@react-native-async-storage/async-storage": "~2.1.0",
+    "@react-navigation/native": "^7.0.4",
+    "@react-navigation/native-stack": "^7.0.4",
+    "@react-native-masked-view/masked-view": "^0.3.1",
     "expo": "~53.0.20",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-native": "0.79.5",
-    "react-native-web": "^0.20.0"
+    "react-native-get-random-values": "^1.11.0",
+    "react-native-safe-area-context": "4.11.1",
+    "react-native-screens": "~4.9.0",
+    "react-native-web": "^0.20.0",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

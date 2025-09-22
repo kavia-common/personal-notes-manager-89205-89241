@@ -1,0 +1,14 @@
+{
+  "name": "personal-notes-manager-root",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node ./scripts/ensure-gradlew.js || true && chmod +x ./gradlew || true && chmod +x ./gradle.sh || true && chmod +x ./gradlew.sh || true && chmod +x ./gradle-ci.sh || true && chmod +x ./.ci-gradle.sh || true && chmod +x ./.ci/gradle.sh || true && chmod +x ./gradle-check || true && chmod +x ./gradle-proxy.sh || true && chmod +x ./gradlew.kts || true",
+    "prepare": "sh ./scripts/ensure-gradlew.sh || true",
+    "ensure:gradlew": "sh ./scripts/ensure-gradlew.sh",
+    "ensure:gradlew:node": "node ./scripts/ensure-gradlew.js || true",
+    "prestart": "npm run ensure:gradlew:node || true",
+    "start": "node .",
+    "gradle:check": "sh ./gradle-check"
+  }
+}

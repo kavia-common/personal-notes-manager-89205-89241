@@ -1,0 +1,22 @@
+# Files that must be executable in CI
+gradlew
+gradle
+gradle.sh
+gradlew.sh
+gradle-ci.sh
+gradle-check
+gradle-proxy.sh
+gradle-ci.sh
+ci-run.sh
+ci-bootstrap.sh
+run-gradle.sh
+run-gradle-ci.sh
+.ci-gradle.sh
+.ci/init.sh
+.ci/pre-gradle.sh
+.ci/gradle-wrapper.sh
+.ci/make-exec.sh
+mobile_frontend/ci-gradle-check.sh
+scripts/ensure-gradlew.sh
+scripts/ensure-gradlew.js
+ensure-gradlew.cjs

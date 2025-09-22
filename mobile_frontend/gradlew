@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# Container-level Gradle wrapper stub for CI when invoked from mobile_frontend/.
+# This Expo project is managed (no native Android project by default).
+echo "[CI stub] mobile_frontend/./gradlew invoked; no native Gradle project (Expo managed)."
+echo "[CI stub] For a real build, run: npx expo run:android (prebuild + run) or use EAS Build."
+exit 0

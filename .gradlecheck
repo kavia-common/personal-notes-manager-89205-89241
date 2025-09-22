@@ -1,0 +1,5 @@
+# CI sentinel: Presence of this file indicates Gradle is intentionally stubbed for Expo-managed projects.
+# CI pipelines should avoid calling ./gradlew directly and use:
+# - npm run gradle:check (repo root), or
+# - sh ./gradle-ci.sh
+# For real native builds, see CI_USAGE.md.

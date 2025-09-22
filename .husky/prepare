@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+# Minimal prepare hook for CI templates that run .husky/prepare.
+sh ./scripts/ensure-gradlew.sh || true

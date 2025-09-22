@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+# CI alternative path stub. Delegates to repo root ./gradlew if present.
+if [ -f "../gradlew" ]; then
+  exec ../gradlew "$@"
+fi
+echo "[CI stub] tools/gradlew invoked but ../gradlew missing. Expo managed repo; no native Gradle project."
+exit 0

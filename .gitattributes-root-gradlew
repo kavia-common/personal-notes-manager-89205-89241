@@ -1,0 +1,2 @@
+# Force LF for the root gradlew and mark as executable-friendly
+gradlew text eol=lf
