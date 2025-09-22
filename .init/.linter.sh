@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+cd /home/kavia/workspace/code-generation/personal-notes-manager-89205-89241/mobile_frontend
+npm run lint
+
